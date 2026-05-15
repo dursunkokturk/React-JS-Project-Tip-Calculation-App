@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Space Mono;
+  background-color: #C5E4E7;
+}
+
+.general-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 40px;
+}
+
+.general-title h1 {
+  color: #3D6666;
+}
+
+h4 {
+  font-weight: 700;
+  color: #5E7A7D;
+}
+
+.container .left {
+  background-color: white;
+  padding-inline: 32px;
+}
+
+.container .left h4{
+  margin-top: 32px;
+}
+
+.container .left input{
+  background-color: #F3F9FA;
+  border: none;
+  min-width: 311px;
+}
