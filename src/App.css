@@ -86,3 +86,30 @@ h4 {
   padding-bottom: 16px;
   flex: 1;
 }
+
+.container .tip-select-group h4 {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.container .tip-select-group label{
+  background-color: #00474B;
+  color: white;
+  text-align: center;
+  width: calc(50% - 8px);
+  padding: 6px 16px;
+  border-radius: 5px;
+}
+
+.container .tip-group{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.container .tip-group .custom{
+  font-size: 24px;
+  font-weight: 700;
+  background-color: #F3F9FA;
+  color: #547878;
+}
