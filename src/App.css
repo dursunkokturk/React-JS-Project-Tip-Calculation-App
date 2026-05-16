@@ -26,16 +26,24 @@ h4 {
   color: #5E7A7D;
 }
 
-.container .left {
+.container {
   background-color: white;
+  border-radius: 25px;
+}
+
+.container .left {
   padding-inline: 32px;
 }
 
-.container .left h4{
+.container .left h4 {
   margin-top: 32px;
 }
 
-.container .left input{
+.container .form-group {
+  padding: 32px 0 32px 0;
+}
+
+.container .left input {
   font-size: 24px;
   font-weight: 700;
   color: #00474B;
@@ -43,10 +51,10 @@ h4 {
   border: none;
   width: 100%;
   text-align: end;
-  /* padding-right: 18px; */
+  padding-right: 18px;
 }
 
-.container .left .form-grup .input-box{
+.container .left .form-group .input-box {
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -63,16 +71,17 @@ h4 {
   position: relative;
 }
 
-.input-box .icon{
+.input-box .icon {
   position: absolute;
   left: 18px;
   top: 10px;
   transform: translateY(10%);
 
   font-size: 24px;
+  color: #9EBBBD;
 }
 
-.input-box input{
+.input-box input {
   padding-top: 16px;
   padding-bottom: 16px;
   flex: 1;
