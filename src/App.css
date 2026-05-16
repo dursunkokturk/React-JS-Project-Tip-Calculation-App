@@ -60,18 +60,11 @@ h4 {
   overflow: hidden;
 }
 
-.prefix {
-  background: #e2edf3;
-  padding: 12px;
-  color: #5a7d8a;
-  font-weight: 500;
-}
-
-.input-box {
+.container .left .form-group .input-box {
   position: relative;
 }
 
-.input-box .icon {
+.container .left .form-group .input-box .icon {
   position: absolute;
   left: 18px;
   top: 10px;
@@ -81,18 +74,18 @@ h4 {
   color: #9EBBBD;
 }
 
-.input-box input {
+.container .left .form-group .input-box input {
   padding-top: 16px;
   padding-bottom: 16px;
   flex: 1;
 }
 
-.container .tip-select-group h4 {
+.container .left .tip-select-group h4 {
   font-weight: 700;
   margin-bottom: 16px;
 }
 
-.container .tip-select-group label{
+.container .container .left .tip-select-group label {
   background-color: #00474B;
   color: white;
   text-align: center;
@@ -101,14 +94,18 @@ h4 {
   border-radius: 5px;
 }
 
-.container .tip-group{
+.container .left .tip-select-group .tip-group label {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.container .left .tip-group {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
 }
 
-.container .tip-group .custom{
-  font-size: 24px;
+.container .left .tip-group .custom {
   font-weight: 700;
   background-color: #F3F9FA;
   color: #547878;
