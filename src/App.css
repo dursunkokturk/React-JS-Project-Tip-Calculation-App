@@ -29,6 +29,7 @@ h4 {
 .container {
   background-color: white;
   border-radius: 25px;
+  padding-bottom: 32px;
 }
 
 .container .left {
@@ -149,4 +150,21 @@ h4 {
   color: #26C2AE;
   background-color: #00474B;
   width: 55%;
+}
+
+.container .right .reset {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  padding-bottom: 24px;
+}
+
+.container .right button {
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #26C2AE;
+  width: 85%;
+  border-radius: 5px;
+  border: none;
+  padding: 9px 32px;
 }

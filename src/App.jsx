@@ -57,6 +57,9 @@ export default function App() {
               <input type="text" placeholder='' />
             </div>
           </div>
+          <div className="reset">
+            <button>SIFIRLA</button>
+          </div>
         </div>
       </div>
     </>
