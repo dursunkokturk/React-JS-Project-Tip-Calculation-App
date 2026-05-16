@@ -44,7 +44,7 @@ export default function App() {
             </div>
             <div className="input-box">
               <span className='icon'>₺</span>
-              <input type="text" placeholder='' />
+              <label htmlFor="">0</label>
             </div>
           </div>
           <div className="tip-text-and-tip-amount">
@@ -54,7 +54,7 @@ export default function App() {
             </div>
             <div className="input-box">
               <span className='icon'>₺</span>
-              <input type="text" placeholder='' />
+              <label htmlFor="">0</label>
             </div>
           </div>
           <div className="reset">
