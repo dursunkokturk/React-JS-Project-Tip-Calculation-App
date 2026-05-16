@@ -14,7 +14,7 @@ export default function App() {
             <h4>Hesap</h4>
             <div className="input-box">
               <span className='icon'>₺</span>
-              <input type="text" placeholder='Ücret Giriniz' />
+              <input type="text" placeholder='0' />
             </div>
           </div>
           <div className="tip-select-group">
@@ -32,7 +32,7 @@ export default function App() {
             <h4>Kişi Sayısı</h4>
             <div className="input-box">
               <img src={PersonLogo} alt="" />
-              <input type="text" placeholder='Kişi Sayısı Giriniz' />
+              <input type="text" placeholder='0' />
             </div>
           </div>
         </div>
@@ -44,7 +44,7 @@ export default function App() {
             </div>
             <div className="input-box">
               <span className='icon'>₺</span>
-              <label htmlFor="">0</label>
+              <label htmlFor="">0.00</label>
             </div>
           </div>
           <div className="tip-text-and-tip-amount">
@@ -54,7 +54,7 @@ export default function App() {
             </div>
             <div className="input-box">
               <span className='icon'>₺</span>
-              <label htmlFor="">0</label>
+              <label htmlFor="">0.00</label>
             </div>
           </div>
           <div className="reset">
