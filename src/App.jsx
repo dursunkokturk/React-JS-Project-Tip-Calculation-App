@@ -1,3 +1,4 @@
+import PersonLogo from './assets/img/logo-person.png'
 import './App.css'
 
 export default function App() {
@@ -25,6 +26,13 @@ export default function App() {
               <label htmlFor="">% 25</label>
               <label htmlFor="">% 50</label>
               <label htmlFor="" className='custom'>Özel</label>
+            </div>
+          </div>
+          <div className="form-group">
+            <h4>Kişi Sayısı</h4>
+            <div className="input-box">
+              <img src={PersonLogo} alt="" />
+              <input type="text" placeholder='Kişi Sayısı Giriniz' />
             </div>
           </div>
         </div>
