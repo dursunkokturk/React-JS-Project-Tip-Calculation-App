@@ -182,10 +182,25 @@ h4 {
   .container .left {
     width: 379px;
     height: 388px;
+    margin-left: 38px;
   }
 
-  .container .left .form-group{
+  .container .left .form-group {
     padding: 0px;
+  }
+
+  .container .left .tip-select-group label {
+    padding: 6px 10px;
+  }
+
+  .container .left .tip-select-group .tip-group{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 16px;
+  }
+  .container .left .tip-select-group .tip-group label {
+    width: 100%;
+    padding: 10px 0;
   }
 
   .container .right {

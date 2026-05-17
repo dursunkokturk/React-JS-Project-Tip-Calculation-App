@@ -20,11 +20,11 @@ export default function App() {
           <div className="tip-select-group">
             <h4>Bahşiş Oranı Seç %</h4>
             <div className="tip-group">
-              <label htmlFor="">% 5</label>
-              <label htmlFor="">% 10</label>
-              <label htmlFor="">% 15</label>
-              <label htmlFor="">% 25</label>
-              <label htmlFor="">% 50</label>
+              <label htmlFor="">%5</label>
+              <label htmlFor="">%10</label>
+              <label htmlFor="">%15</label>
+              <label htmlFor="">%25</label>
+              <label htmlFor="">%50</label>
               <label htmlFor="" className='custom'>Özel</label>
             </div>
           </div>
