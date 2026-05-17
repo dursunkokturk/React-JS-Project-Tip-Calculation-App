@@ -145,7 +145,7 @@ h4 {
 }
 
 .container .right .input-box label {
-  font-size: 32px;
+  font-size: 48px;
   font-weight: 700;
   color: #26C2AE;
   background-color: #00474B;
@@ -168,4 +168,38 @@ h4 {
   border-radius: 5px;
   border: none;
   padding: 9px 32px;
+}
+
+@media(min-width:1109px) {
+  .container {
+    width: 920px;
+    height: 481px;
+    display: flex;
+    flex-direction: row;
+    margin-inline: auto;
+  }
+
+  .container .left {
+    width: 379px;
+    height: 388px;
+  }
+
+  .container .left .form-group{
+    padding: 0px;
+  }
+
+  .container .right {
+    width: 413px;
+    height: 430px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .container .right .tip-text {
+    padding-top: 20px;
+  }
+
+  .container .right .reset {
+    padding-top: 100px;
+  }
 }
