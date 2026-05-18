@@ -86,7 +86,22 @@ h4 {
   margin-bottom: 16px;
 }
 
-.container .left .tip-select-group label {
+.container .left .tip-select-group .tip-group .custom-input {
+  width: calc(50% - 8px);
+  font-size: 24px;
+  font-weight: 700;
+  font-family: inherit;
+  color: #00474B;
+  background-color: #F3F9FA;
+  border: 2px solid #26C2AE;
+  border-radius: 5px;
+  padding: 6px 16px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.container .left .tip-select-group button {
+  font-family: inherit;
   background-color: #00474B;
   color: white;
   text-align: center;
@@ -95,7 +110,7 @@ h4 {
   border-radius: 5px;
 }
 
-.container .left .tip-select-group .tip-group label {
+.container .left .tip-select-group .tip-group button {
   font-size: 24px;
   font-weight: 700;
 }
@@ -170,8 +185,9 @@ h4 {
   padding: 9px 32px;
 }
 
-.tip-group label.active {
-  background-color: #26c0ab; /* Figma'daki seçili renk */
+.tip-group button.active {
+  background-color: #26c0ab;
+  /* Figma'daki seçili renk */
   color: #00474b;
 }
 
@@ -194,7 +210,7 @@ h4 {
     padding: 0px;
   }
 
-  .container .left .tip-select-group label {
+  .container .left .tip-select-group button {
     padding: 6px 10px;
   }
 
@@ -204,9 +220,15 @@ h4 {
     gap: 16px;
   }
 
-  .container .left .tip-select-group .tip-group label {
+  .container .left .tip-select-group .tip-group input {
     width: 100%;
     padding: 10px 0;
+  }
+
+  .container .left .tip-select-group .tip-group button,
+  .container .left .tip-select-group .tip-group .custom-input {
+    width: 100%;
+    height: 48px;
   }
 
   .container .right {

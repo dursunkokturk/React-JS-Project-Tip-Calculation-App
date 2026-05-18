@@ -50,13 +50,13 @@ export default function App() {
             <h4>Bahşiş Oranı Seç %</h4>
             <div className="tip-group">
               {tipOptions.map((rate) => (
-                <label
+                <button
                   key={rate}
                   className={tipRate === rate && !isCustom ? 'active' : ''}
                   onClick={() => handleTipSelect(rate)}
                 >
-                  {rate}
-                </label>
+                  %{rate}
+                </button>
               )
               )}
               {isCustom ? (
@@ -73,12 +73,12 @@ export default function App() {
                   }}
                 />
               ) : (
-                <label
+                <button
                   className='custom'
                   onClick={handleCustomClick}
                 >
                   Özel
-                </label>
+                </button>
               )}
             </div>
           </div>
