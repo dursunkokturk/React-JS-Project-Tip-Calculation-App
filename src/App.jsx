@@ -1,5 +1,6 @@
 import PersonLogo from './assets/img/logo-person.png'
 import './App.css'
+import { useState } from 'react';
 
 export default function App() {
 
@@ -36,7 +37,6 @@ export default function App() {
               <span className='icon'>₺</span>
               <input
                 type="text"
-                placeholder='0'
                 value={bill}
                 placeholder='0'
                 onChange={(e) => {
