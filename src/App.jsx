@@ -91,7 +91,7 @@ export default function App() {
                 <span>0 olamaz</span>
               )}
             </div>
-            <div className={`input-box ${personError ? 'error' : ''}`}>
+            <div className={`input-box ${personTouched && personError ? 'error' : ''}`}>
               <img src={PersonLogo} className='icon' alt="" />
               <input
                 type="text"
