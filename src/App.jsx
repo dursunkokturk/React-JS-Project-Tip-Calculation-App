@@ -5,16 +5,30 @@ import { useState } from 'react';
 export default function App() {
 
   const [bill, setBill] = useState("");
+  const [billError, setBillError] = useState(false);
+  const [billTouched, setBillTouched] = useState(false);
+
   const [personNumber, setPersonNumber] = useState("");
+  const [personError, setPersonError] = useState(false);
+  const [personTouched, setPersonTouched] = useState(false);
+
   const [tipRate, setTipRate] = useState("");
   const [customTip, setCustomTip] = useState("");
   const [isCustom, setIsCustom] = useState(false);
-  const [personError, setPersonError] = useState(false);
-  const [personTouched, setPersonTouched] = useState(false);
 
   const tipOptions = [5, 10, 15, 25, 50];
 
   const handleTipSelect = (rate) => {
+    setBillTouched(true);
+
+    const billValue = Number(bill);
+
+    if (bill === "" || isNaN(Number(billValue)) || billValue <= 0) {
+      setBillError(true);
+      return;
+    }
+
+    setBillError(false);
     setTipRate(rate);
     setIsCustom(false);
     setCustomTip("");
@@ -25,6 +39,19 @@ export default function App() {
     setTipRate("");
   };
 
+  const handleReset = () => {
+    setBill("");
+    setBillError(false);
+    setBillTouched(false);
+
+    setPersonNumber("");
+    setPersonError(false);
+    setPersonTouched(false);
+    
+    setTipRate("");
+    setCustomTip("");
+    setIsCustom(false);
+  };
 
   return (
     <>
@@ -34,16 +61,36 @@ export default function App() {
       <div className="container">
         <div className="left">
           <div className="form-group">
-            <h4>Hesap</h4>
-            <div className="input-box">
+            <div className="label-error">
+              <h4>Hesap</h4>
+              {billTouched && billError && (
+                <span>Geçerli tutar girin</span>
+              )}
+            </div>
+            <div className={`input-box ${billTouched && billError ? 'error' : ''}`}>
               <span className='icon'>₺</span>
               <input
-                type="text"
+                type="number"
                 value={bill}
                 placeholder='0'
                 onChange={(e) => {
                   const value = e.target.value;
+
                   setBill(value);
+
+                  setBillTouched(true);
+
+                  const numericValue = Number(value);
+
+                  if (
+                    value === "" ||
+                    isNaN(numericValue) ||
+                    numericValue <= 0
+                  ) {
+                    setBillError(true);
+                  } else {
+                    setBillError(false);
+                  }
                 }}
               />
             </div>
@@ -54,7 +101,7 @@ export default function App() {
               {tipOptions.map((rate) => (
                 <button
                   key={rate}
-                  className={[tipRate === rate && !isCustom ? 'active' : '', isCustom ? 'passive': ''].filter(Boolean).join(' ')}
+                  className={[tipRate === rate && !isCustom ? 'active' : '', isCustom ? 'passive' : ''].filter(Boolean).join(' ')}
                   onClick={() => handleTipSelect(rate)}
                   disabled={isCustom}
                 >
@@ -95,7 +142,7 @@ export default function App() {
             <div className={`input-box ${personTouched && personError ? 'error' : ''}`}>
               <img src={PersonLogo} className='icon' alt="" />
               <input
-                type="text"
+                type="number"
                 placeholder='0'
                 value={personNumber}
                 onChange={(e) => {
@@ -136,7 +183,7 @@ export default function App() {
             </div>
           </div>
           <div className="reset">
-            <button>SIFIRLA</button>
+            <button onClick={handleReset}>SIFIRLA</button>
           </div>
         </div>
       </div>
