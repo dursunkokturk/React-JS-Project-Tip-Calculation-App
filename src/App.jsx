@@ -102,7 +102,7 @@ export default function App() {
                   setPersonNumber(value);
                   setPersonTouched(true);
 
-                  if (value === "" || Number(value) === 0) {
+                  if (value === "" || Number(value) <= 0) {
                     setPersonError(true);
                   } else {
                     setPersonError(false);
