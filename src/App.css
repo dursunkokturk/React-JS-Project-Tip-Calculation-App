@@ -267,6 +267,15 @@ h4 {
     border: none;
   }
 
+  .container .left .tip-select-group .tip-group button:hover,
+  .container .left .tip-select-group .tip-group .custom-input:hover {
+    cursor: pointer;
+  }
+
+  .container .left .tip-select-group .tip-group .custom-input:focus {
+    cursor: text;
+  }
+  
   .container .right {
     width: 413px;
     height: 430px;
