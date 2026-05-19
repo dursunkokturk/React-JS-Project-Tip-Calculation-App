@@ -47,11 +47,29 @@ export default function App() {
     setPersonNumber("");
     setPersonError(false);
     setPersonTouched(false);
-    
+
     setTipRate("");
     setCustomTip("");
     setIsCustom(false);
   };
+
+  const billValue = Number(bill);
+  const personValue = Number(personNumber);
+  const tipValue = Number(tipRate);
+
+  const isValid = billValue > 0 && personValue > 0 && tipValue > 0;
+  
+  const totalTip = isValid
+    ? (billValue * tipValue) / 100
+    : 0;
+
+  const tipPerPerson = isValid
+    ? totalTip / personValue
+    : 0;
+
+  const totalPerPerson = isValid
+    ? (billValue + totalTip) / personValue
+    : 0;
 
   return (
     <>
@@ -169,7 +187,7 @@ export default function App() {
             </div>
             <div className="input-box">
               <span className='icon'>₺</span>
-              <label htmlFor="">0.00</label>
+              <label htmlFor="">{tipPerPerson.toFixed(2)}</label>
             </div>
           </div>
           <div className="tip-text-and-tip-amount">
@@ -179,7 +197,7 @@ export default function App() {
             </div>
             <div className="input-box">
               <span className='icon'>₺</span>
-              <label htmlFor="">0.00</label>
+              <label htmlFor="">{totalPerPerson.toFixed(2)}</label>
             </div>
           </div>
           <div className="reset">
