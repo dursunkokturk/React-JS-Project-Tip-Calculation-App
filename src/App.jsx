@@ -85,7 +85,12 @@ export default function App() {
             </div>
           </div>
           <div className="form-group">
+            <div className="label-error">
               <h4>Kişi Sayısı</h4>
+              {personTouched && personError && (
+                <span>0 olamaz</span>
+              )}
+            </div>
             <div className={`input-box ${personError ? 'error' : ''}`}>
               <img src={PersonLogo} className='icon' alt="" />
               <input
@@ -104,12 +109,7 @@ export default function App() {
                   }
                 }}
               />
-              
-              </div>
-              <div className="label-error">
-                {personTouched && personError && (
-                <span>0 olamaz</span>
-              )}
+
             </div>
           </div>
         </div>
