@@ -91,11 +91,10 @@ Breakpoint: 1109px üzerinde iki sütunlu masaüstü düzeni, altında tek sütu
 
 
 
-#EN <br>
-#Tip Calculator <br>
-A React app that easily splits your restaurant bill, calculating tip amount and total per person in real time.
-Features
-Quick Rate Selection — Preset tip rates like 5%, 10%, 15%, 25%, 50% <br>
+# EN <br>
+# Tip Calculator <br>
+A React app that easily splits your restaurant bill, calculating tip amount and total per person in real time. <br>
+Features Quick Rate Selection — Preset tip rates like 5%, 10%, 15%, 25%, 50% <br>
 Custom Rate Input — Enter any tip percentage you want <br>
 Per-Person Calculation — Splits tip and total by number of people <br>
 Real-Time Updates — Results refresh instantly with every change <br>
@@ -106,17 +105,20 @@ Responsive Design — Separate layouts for mobile and desktop <br>
 <br>
 <br>
 <br>
-##Screenshot
+## Screenshot
 The app features a two-column interface with a light green background, form fields on the left, and calculation results on a dark panel on the right.
 
 <br>
 <br>
 <br>
 
-##Technologies
-TechnologyDescriptionReact 18UI components and state managementCSS3Custom styles and responsive design with @mediaViteDevelopment server and build tool
+## Technologies <br>
+Technology Description <br>
+React 18UI components and state management <br>
+CSS3Custom styles and responsive design with @media <br>
+ViteDevelopment server and build tool <br>
 
-##Installation
+## Installation
 bash# Clone the repo
 git clone https://github.com/username/tip-calculator.git
 
@@ -135,12 +137,12 @@ Open http://localhost:5173 in your browser.
 <br>
 
 ## Project Structure
-src/
-├── assets/
-│   └── img/
-│       └── logo-person.png
-├── App.jsx        # Main application component
-└── App.css        # All styles
+src/ <br>
+├── assets/ <br>
+│   └── img/ <br>
+│       └── logo-person.png <br>
+├── App.jsx        # Main application component <br>
+└── App.css        # All styles <br>
 
 <br>
 <br>
@@ -148,13 +150,13 @@ src/
 
 ## Usage
 
-Enter the total bill amount in the Bill field (₺)
-Select a tip rate from the list or press Custom to enter your own
-Enter the number of people in the Number of People field
-The tip and total per person appear automatically in the right panel
-Press RESET for a new calculation
+Enter the total bill amount in the Bill field (₺) <br>
+Select a tip rate from the list or press Custom to enter your own <br>
+Enter the number of people in the Number of People field <br>
+The tip and total per person appear automatically in the right panel <br>
+Press RESET for a new calculation <br>
 
 ##Design Details
-Color Palette: #C5E4E7 (background) · #00474B (dark panel) · #26C2AE (accent)
-Font: Space Mono
-Breakpoint: Two-column desktop layout above 1109px, single-column mobile layout below
+Color Palette: #C5E4E7 (background) · #00474B (dark panel) · #26C2AE (accent) <br>
+Font: Space Mono <br>
+Breakpoint: Two-column desktop layout above 1109px, single-column mobile layout below <br>
