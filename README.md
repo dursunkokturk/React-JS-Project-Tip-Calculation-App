@@ -69,17 +69,17 @@ src/ <br>
 └── App.css        # Tüm stiller <br>
 
 ## Kullanım
-Hesap alanına toplam fatura tutarını girin (₺)
-Listeden bir bahşiş oranı seçin ya da Özel butonuna basarak kendi oranınızı yazın
-Kişi Sayısı alanına kaç kişi olduğunu girin
-Sağ panelde kişi başına bahşiş ve toplam tutar otomatik olarak görünür
-Yeni bir hesaplama için SIFIRLA butonuna basın
+Hesap alanına toplam fatura tutarını girin (₺) <br>
+Listeden bir bahşiş oranı seçin ya da Özel butonuna basarak kendi oranınızı yazın <br>
+Kişi Sayısı alanına kaç kişi olduğunu girin <br>
+Sağ panelde kişi başına bahşiş ve toplam tutar otomatik olarak görünür <br>
+Yeni bir hesaplama için SIFIRLA butonuna basın <br>
 
 
 ## Tasarım Detayları
-Renk Paleti: #C5E4E7 (arka plan) · #00474B (koyu panel) · #26C2AE (vurgu)
-Font: Space Mono
-Breakpoint: 1109px üzerinde iki sütunlu masaüstü düzeni, altında tek sütunlu mobil düzen
+Renk Paleti: #C5E4E7 (arka plan) · #00474B (koyu panel) · #26C2AE (vurgu) <br>
+Font: Space Mono <br>
+Breakpoint: 1109px üzerinde iki sütunlu masaüstü düzeni, altında tek sütunlu mobil düzen <br>
 <br>
 <br>
 <br>
@@ -91,8 +91,8 @@ Breakpoint: 1109px üzerinde iki sütunlu masaüstü düzeni, altında tek sütu
 
 
 
-#EN
-#Tip Calculator
+#EN <br>
+#Tip Calculator <br>
 A React app that easily splits your restaurant bill, calculating tip amount and total per person in real time.
 Features
 Quick Rate Selection — Preset tip rates like 5%, 10%, 15%, 25%, 50% <br>
