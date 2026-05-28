@@ -108,10 +108,6 @@ Responsive Design — Separate layouts for mobile and desktop <br>
 ## Screenshot
 The app features a two-column interface with a light green background, form fields on the left, and calculation results on a dark panel on the right.
 
-<br>
-<br>
-<br>
-
 ## Technologies <br>
 Technology Description <br>
 React 18UI components and state management <br>
@@ -132,10 +128,6 @@ npm install
 npm run dev
 Open http://localhost:5173 in your browser.
 
-<br>
-<br>
-<br>
-
 ## Project Structure
 src/ <br>
 ├── assets/ <br>
@@ -143,10 +135,6 @@ src/ <br>
 │       └── logo-person.png <br>
 ├── App.jsx        # Main application component <br>
 └── App.css        # All styles <br>
-
-<br>
-<br>
-<br>
 
 ## Usage
 
