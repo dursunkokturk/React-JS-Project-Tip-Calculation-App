@@ -41,7 +41,10 @@ Uygulama açık yeşil arka plan, sol tarafta form alanları ve sağ tarafta koy
 
 
 ## Teknolojiler
-TeknolojiAçıklamaReact 18UI bileşenleri ve state yönetimiCSS3Özel stiller ve @media ile duyarlı tasarımViteGeliştirme sunucusu ve derleme aracı
+Teknoloji Açıklama <br>
+React 18UI bileşenleri ve state yönetimi <br>
+CSS3Özel stiller ve @media ile duyarlı tasarım <br>
+ViteGeliştirme sunucusu ve derleme aracı <br>
 
 ## Kurulum
 bash# Repoyu klonlayın
@@ -58,12 +61,12 @@ npm run dev
 Tarayıcınızda http://localhost:5173 adresini açın.
 
 ## Proje Yapısı
-src/
-├── assets/
-│   └── img/
-│       └── logo-person.png
-├── App.jsx        # Ana uygulama bileşeni
-└── App.css        # Tüm stiller
+src/ <br>
+├── assets/ <br>
+│   └── img/ <br>
+│       └── logo-person.png <br>
+├── App.jsx        # Ana uygulama bileşeni <br>
+└── App.css        # Tüm stiller <br>
 
 ## Kullanım
 Hesap alanına toplam fatura tutarını girin (₺)
