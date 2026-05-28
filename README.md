@@ -156,7 +156,7 @@ Enter the number of people in the Number of People field <br>
 The tip and total per person appear automatically in the right panel <br>
 Press RESET for a new calculation <br>
 
-##Design Details
+## Design Details  <br>
 Color Palette: #C5E4E7 (background) · #00474B (dark panel) · #26C2AE (accent) <br>
 Font: Space Mono <br>
 Breakpoint: Two-column desktop layout above 1109px, single-column mobile layout below <br>
